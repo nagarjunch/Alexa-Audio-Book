@@ -1,0 +1,168 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "music book",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StartOverIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "PlayChapter",
+          "slots": [
+            {
+              "name": "chapterTitle",
+              "type": "chapterType",
+              "samples": [
+                "i want to listen {chapterTitle}",
+                "play {chapterTitle}"
+              ]
+            }
+          ],
+          "samples": [
+            "read {chapterTitle}",
+            "start with {chapterTitle}",
+            "start",
+            "start reading out",
+            "{chapterTitle}",
+            "Play {chapterTitle}",
+            "Play song number {chapterTitle}"
+          ]
+        },
+        {
+          "name": "fsone",
+          "slots": [],
+          "samples": [
+            "causes of soil erosion",
+            "what causes soil erosion",
+            "cause of soil erosion"
+          ]
+        },
+        {
+          "name": "fstwo",
+          "slots": [],
+          "samples": [
+            "what is global warming",
+            "what causes global warming",
+            "effects of global warming"
+          ]
+        },
+        {
+          "name": "fsthree",
+          "slots": [],
+          "samples": [
+            "what is ecosystem",
+            "what is community of organisms called"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "chapterType",
+          "values": [
+            {
+              "id": "3",
+              "name": {
+                "value": "three",
+                "synonyms": [
+                  "chapter 3",
+                  "three",
+                  "3",
+                  "third",
+                  "chapter three"
+                ]
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "two",
+                "synonyms": [
+                  "chapter 2",
+                  "chapter two",
+                  "second choice",
+                  "2",
+                  "two",
+                  "second "
+                ]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "one",
+                "synonyms": [
+                  "chapter 1",
+                  "chapter one",
+                  "first",
+                  "first one",
+                  "one",
+                  "1"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "PlayChapter",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "chapterTitle",
+              "type": "chapterType",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1278462058331.1066787259926"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Slot.1278462058331.1066787259926",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "which chapter do you want to listen?"
+          },
+          {
+            "type": "PlainText",
+            "value": "which chapter do you want me to play?"
+          }
+        ]
+      }
+    ]
+  }
+}

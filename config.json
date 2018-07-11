@@ -1,0 +1,14 @@
+{
+  "APP_ID": "amzn1.ask.skill.98f32193-f782-4167-aed2-7517a0ef94d2",
+  "PLAYBACK_URLS" : {
+    "1": "https://s3.amazonaws.com/junkiealexa/bensound-slowmotion.mp3",
+    "2": "https://s3.amazonaws.com/junkiealexa/bensound-slowmotion.mp3",
+    "3": "https://s3.amazonaws.com/junkiealexa/bensound-slowmotion.mp3"
+  },
+  "QA": {
+    "fsone" : ["Soil erosion is caused by the dynamic activity of erosive agents, that is, water, ice (glaciers), snow, air (wind), plants, animals, and humans."],
+    "fstwo" : ["Global mean surface-temperature change from 1880 to 2017, relative to the 1951–1980 mean. The black line is the global annual mean, and the red line is the five-year local regression line. The blue uncertainty bars show a 95% confidence interval. Global warming, also referred to as climate change, is the observed century-scale rise in the average temperature of the Earth's climate system, and its related effects.[1][2] Multiple lines of scientific evidence show that the climate system is warming.[3][4][5] Many of the observed changes since the 1950s are unprecedented in the instrumental temperature record, which extends back to the mid-19th century, and in paleoclimate proxy records covering thousands of years."],
+    "fsthree" : ["An ecosystem is a community made up of living organisms and nonliving components such as air, water and mineral soil.[3] Ecosystems may be studied either as contingent collections of plants and animals, or as structured systems and communities that are governed by general rules"]
+  },
+  "NOQA": ["Sorry I'm unable to answer your query now."]
+}
